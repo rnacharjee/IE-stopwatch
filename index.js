@@ -7,9 +7,9 @@ var laps =[];
 var lapSecond = [0];
 var header = ["Split Time" , "Cycle Time (Sec)"];
 let myTable = document.querySelector('#table');
-let average = 0;
-let capacity = 0;
-let capacityAllowance = 0;
+var average = 0;
+var capacity = 0;
+var capacityAllowance = 0;
 
 function startTimer(){
     if(stopTime == true){
@@ -65,7 +65,13 @@ function resetTimer() {
     min = 0;
     laps=[];
     lapSecond=[0];
+    average = 0;
+    capacity = 0;
+    capacityAllowance = 0;
     document.getElementById("table").innerHTML="";
+    document.getElementById("avg-cycletime").innerText= "Average Cycle Time ="
+    document.getElementById("capacity").innerText= "Capacity ="
+    document.getElementById("capacity-allowance").innerText= "Capacity -(15%) ="
 }
 
 function lapTimer(){
@@ -112,9 +118,9 @@ function lapTimer(){
     myTable.appendChild(table);
 
     
-    let average = Math.max(...lapSecond)/(lapSecond.length-1)
-    let capacity = 3600/average;
-    let capacityAllowance = capacity*.85;
+    average = Math.max(...lapSecond)/(lapSecond.length-1)
+    capacity = 3600/average;
+    capacityAllowance = capacity*.85;
     
     document.getElementById("avg-cycletime").innerText= "Average Cycle Time =" +average.toFixed(2)
     document.getElementById("capacity").innerText= "Capacity =" +capacity.toFixed(0)
