@@ -112,7 +112,7 @@ function lapTimer(){
     myTable.appendChild(table);
 
     
-    let average = Math.max(...lapSecond)/lapSecond.length
+    let average = Math.max(...lapSecond)/(lapSecond.length-1)
     let capacity = 3600/average;
     let capacityAllowance = capacity*.85;
     
