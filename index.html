@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwtch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Stopwatch</h1>
+        
+        <div class="timer" id="timer">00:00:00</div>
+        <button onclick="startTimer()" id="button-start">Start</button>
+        <button onclick="lapTimer()" id="button-lap">Lap</button>
+        <button onclick="stopTimer()" id="button-stop">Stop</button>
+        <button onclick="resetTimer()" id="button-reset">Reset</button>
+        
+    </div>
+    <div>
+        
+
+        <h2>Cycle Time</h2>
+        <div id="table"></div>
+        
+        <ol id="lap-time"></ol>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

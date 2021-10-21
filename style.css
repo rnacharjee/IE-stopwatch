@@ -1,0 +1,27 @@
+body {
+background-color:rgb(104, 40, 29);
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+height:100%;
+
+}
+.wrapper {
+    width: auto;
+    margin: 30px;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    background-color:tomato;
+    
+}
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 2.6em;
+    text-transform: uppercase;
+  }
+  #seconds, #tens{
+    font-size:2em;
+  }
+  .timer {
+      font-size: 3em;
+  }
